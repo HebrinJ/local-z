@@ -1,0 +1,43 @@
+.slide {
+    height: min-content;
+    margin-right: 20px;
+    width: 512px;
+  }
+
+.slide:last-child {
+    margin-right: 0;
+  }
+
+.slide:nth-child(2n) .slide__card {
+    height: 682px;
+  }
+
+@media screen and (max-width: 1439px) {
+  .slide {
+      width: 420px;
+    }
+  }
+
+@media screen and (max-width: 1023px) {
+    .slide {
+      width: 370px;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .slide {
+      width: 325px;
+    }
+  }
+
+@media screen and (max-width: 425px) {
+    .slide {
+      width: 319px;
+    }
+  }
+
+@media screen and (max-width: 375px) {
+    .slide {
+      width: 263px;
+    }
+  }

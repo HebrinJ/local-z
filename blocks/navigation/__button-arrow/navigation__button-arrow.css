@@ -1,0 +1,18 @@
+.navigation__button-arrow {
+    display: block;
+    position: relative;
+  }
+
+.navigation__button-arrow::after {
+    content: '';
+    position: absolute;
+    background: url("../../../images/navigation-arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 12px;
+    height: 6px;
+    margin-left: 14px;
+    top: 9px;
+  }
+  

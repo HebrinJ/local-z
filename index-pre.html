@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="">
   <title>Document</title>
-  <link rel="stylesheet" href="./styles/style-pre.css">
+  <link rel="stylesheet" href="./pages/index.css">
+  <!-- <link rel="stylesheet" href="./styles/style-pre.css"> -->
 </head>
 <body class="page">
     <header class="header page__section">
-      <ul class="navigation header__navigation">
+      <ul class="navigation navigation_header">
         <li class="navigation__item navigation__item_show-dropdown">
-          <div class="navigation__button navigation__button_arrow">Новости</div>
+          <div class="navigation__button navigation__button-arrow" id="headerArrow">Новости</div>
           <nav class="dropdown-menu navigation__dropdown-menu navigation__dropdown-menu_hover">
             <a href="#" class="dropdown-menu__link">Музыка</a>
             <a href="#" class="dropdown-menu__link">События</a>
@@ -32,7 +33,7 @@
         </button>
       </div>
       <h1 class="header__title">LOCAL-Z</h1>
-      <h2 class="description header__description">
+      <h2 class="description description_position">
         <div class="description__line">Диджитал-зин об актуальных</div>
         <div class="description__line">трендах самого свободного</div>
         <div class="description__line">поколения</div>
@@ -53,8 +54,8 @@
         <div class="menu-icon menu-icon_close menu-button__icon"></div>
       </button>
       <ul class="navigation menu__navigation">
-        <li class="navigation-button navigation__item navigation__item_vertical">
-          <div class="navigation__button navigation__button_arrow">Новости</div>
+        <li class="navigation__button navigation__item navigation__item_vertical">
+          <div class="navigation__button navigation__button-arrow" id="menuArrow">Новости</div>
           <nav class="dropdown-menu navigation__dropdown-menu navigation__dropdown-menu_click">
             <a href="#" class="dropdown-menu__link">Музыка</a>
             <a href="#" class="dropdown-menu__link">События</a>
@@ -79,7 +80,7 @@
         <div class="slider-content slider__slider-content">
           <div class="slide slider-content__slide">
             <a href="#" class="card-image slide__card">
-              <img src="./images/slider-image-1.jpg" class="card-image__image" alt="">
+              <img src="./images/slider-image-1.jpg" class="card-image__image" alt="ароматы лета обложка">
               <div class="card-image__button">смотреть новость</div>
             </a>
             <h4 class="slide__title">Ароматы лета. Выбор редакции</h4>
@@ -87,7 +88,7 @@
           </div>
           <div class="slide slider-content__slide">
             <a href="#" class="card-image slide__card">
-              <img src="./images/slider-image-2.jpg" class="card-image__image" alt="">
+              <img src="./images/slider-image-2.jpg" class="card-image__image" alt="новый трек мс кулак обложка">
               <div class="card-image__button">смотреть новость</div>
             </a>
             <h4 class="slide__title">Новый трек МС Кулак. Главный бэнгер сезона?</h4>
@@ -95,7 +96,7 @@
           </div>
           <div class="slide slider-content__slide">
             <a href="#" class="card-image slide__card">
-              <img src="./images/slider-image-3.jpg" class="card-image__image" alt="">
+              <img src="./images/slider-image-3.jpg" class="card-image__image" alt="открытие выставки обложка">
               <div class="card-image__button">смотреть новость</div>
             </a>
             <h4 class="slide__title">Открытие выставки фотографа Криса Хэттингера</h4>
@@ -103,7 +104,7 @@
           </div>
           <div class="slide slider-content__slide">
             <a href="#" class="card-image slide__card">
-              <img src="./images/slider-image-4.jpg" class="card-image__image" alt="">
+              <img src="./images/slider-image-4.jpg" class="card-image__image" alt="открытие нового клуба обложка">
               <div class="card-image__button">смотреть новость</div>
             </a>
             <h4 class="slide__title">DJ Deejay выступит на открытии нового клуба</h4>
@@ -111,7 +112,7 @@
           </div>
           <div class="slide slider-content__slide">
             <a href="#" class="card-image slide__card">
-              <img src="./images/slider-image-5.jpg" class="card-image__image" alt="">
+              <img src="./images/slider-image-5.jpg" class="card-image__image" alt="из грязи в князи обложка">
               <div class="card-image__button">смотреть новость</div>
             </a>
             <h4 class="slide__title">Из грязи в князи. Интервью с популярным дизайнером одежды Пэтом Джонсоном</h4>
@@ -128,16 +129,16 @@
         <h3 class="section-title section-title_color_white">Instagram</h3>
         <div class="instagram">
           <a href="#" class="instagram__image-link">
-            <img src="./images/instagram-img-1.jpg" alt="" class="instagram__image">
+            <img src="./images/instagram-img-1.jpg" alt="инстаграмм фото" class="instagram__image">
           </a>
           <a href="#" class="instagram__image-link">
-            <img src="./images/instagram-img-2.jpg" alt="" class="instagram__image">
+            <img src="./images/instagram-img-2.jpg" alt="инстаграмм фото" class="instagram__image">
           </a>
           <a href="#" class="instagram__image-link">
-            <img src="./images/instagram-img-3.jpg" alt="" class="instagram__image">
+            <img src="./images/instagram-img-3.jpg" alt="инстаграмм фото" class="instagram__image">
           </a>
           <a href="#" class="instagram__image-link">
-            <img src="./images/instagram-img-4.jpg" alt="" class="instagram__image">
+            <img src="./images/instagram-img-4.jpg" alt="инстаграмм фото" class="instagram__image">
           </a>
         </div>
       </section>
@@ -150,7 +151,7 @@
           <form action="" class="form subscribe__form">
             <fieldset class="form__subscribe-info">
               <input type="email" class="form__input-email" placeholder="Укажите свой email">
-              <input type="submit" class="form__submit" placeholder="Подписаться">
+              <input type="submit" class="form__submit" value="Подписаться">
               <label class="form__agreement">
                 <input type="checkbox" class="form__agreement-checkbox">
                 <span class="form__agreement-custom-checkbox"></span>

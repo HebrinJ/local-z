@@ -1,0 +1,22 @@
+.form__agreement-custom-checkbox {
+    position: relative;
+    min-width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: inherit;
+    margin: 0;
+    margin-right: 10px;
+  }
+
+.form__agreement-checkbox:checked + .form__agreement-custom-checkbox:after {
+    content: '';
+    position: absolute;
+    background: url("../../../images/checkbox-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 8px;
+    top: calc(50% - 4px);
+    left: calc(50% - 6px);
+  }

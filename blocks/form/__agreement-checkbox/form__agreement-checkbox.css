@@ -1,0 +1,7 @@
+.form__agreement-checkbox:checked {
+    color: #fff;    
+  }
+
+.form__agreement-checkbox {
+    display: none;
+  }

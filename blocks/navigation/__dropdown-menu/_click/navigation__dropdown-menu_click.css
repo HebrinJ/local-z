@@ -1,0 +1,8 @@
+.navigation__dropdown-menu_click {
+    padding: 0;
+  }
+
+.navigation__dropdown-menu_click .dropdown-menu__link {
+    margin-bottom: 0;
+    margin-top: 40px;
+  }

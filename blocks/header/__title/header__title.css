@@ -1,0 +1,50 @@
+.header__title {
+    margin: 0;
+    color: #fff;
+    font-family: 'NeueMachinaBold';
+    font-size: 300px;
+    line-height: 300px;
+    margin-left: -20px;
+    margin-bottom: 32px;
+  }
+
+@media screen and (max-width: 1460px) {
+    .header__title {
+      font-size: 290px;
+      line-height: 290px;      
+    }
+  }
+
+@media screen and (max-width: 1439px) {
+    .header__title {
+      font-size: 211px;
+      margin-left: -7px;
+      line-height: 265px;      
+    }
+  }
+
+@media screen and (max-width: 1023px) {
+    .header__title {
+      font-size: 151px;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .header__title {
+      font-size: 92px;
+      line-height: 92px;
+      margin-bottom: 40px;
+    }
+  }
+
+@media screen and (max-width: 479px) {
+    .header__title {
+      font-size: 70px;
+    }
+  }
+
+@media screen and (max-width: 375px) {
+    .header__title {
+      font-size: 60px;
+    }
+  }

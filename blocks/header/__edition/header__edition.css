@@ -1,0 +1,9 @@
+.header__edition {
+    padding-left: 176px;
+}
+
+@media screen and (max-width: 1023px) {
+    .header__edition {
+        padding: 0;
+    }
+}

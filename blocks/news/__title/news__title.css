@@ -1,0 +1,10 @@
+.news__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 48px;
+    line-height: 48px;
+    font-family: 'NeueMachinaBold';
+    color: #000;
+    text-transform: uppercase;    
+}

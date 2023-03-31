@@ -1,0 +1,9 @@
+.description_position {
+    padding-left: 176px;
+}
+
+@media screen and (max-width: 1023px) {
+    .description_position {
+        padding: 0;
+    }
+}

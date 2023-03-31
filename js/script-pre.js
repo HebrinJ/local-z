@@ -8,7 +8,8 @@ const closeMenuButton = document.querySelector(".menu__close-button");
 const openMobileMenuButton = document.querySelector(".mobile-header__open-menu-button");
 const sliderArrowLeft = document.querySelector(".slider-navigation__arrow_left");
 const sliderArrowRight = document.querySelector(".slider-navigation__arrow_right");
-const buttonToNews = document.querySelector(".navigation-button");
+const buttonToNewsHeader = document.querySelector(".navigation_header .navigation__button");
+const buttonToNewsMenu = document.querySelector(".menu__navigation .navigation__button");
 const menu = document.querySelector(".menu");
 const page = document.querySelector(".page");
 
@@ -46,7 +47,7 @@ const toggleMenu = () => {
     toggleScrollOnMobile();
   }
 
-  menu.classList.add("menu_open");
+  menu.classList.toggle("menu_open");
 }
 
 const closeMenu = () => {
@@ -57,15 +58,16 @@ openMenuButton.addEventListener("click", toggleMenu);
 openMobileMenuButton.addEventListener("click", toggleMenu);
 closeMenuButton.addEventListener("click", toggleMenu);
 
-const openDropDownMenu = () => {
-  const dropdownMenuNews = document.querySelector(".navigation__dropdown-menu_click");
-  const menuItemArrow = document.querySelector(".navigation-button.navigation__button_arrow");
+const openDropDownMenu = (section, arrow) => {
+  const dropdownMenuNews = document.querySelector(section);
+  const menuItemArrow = document.querySelector(arrow);
 
   dropdownMenuNews.classList.toggle("dropdown-menu_click-open");
-  menuItemArrow.classList.toggle("navigation__button_arrow_up");
+  menuItemArrow.classList.toggle("navigation__button-arrow_up");
 }
 
-buttonToNews.addEventListener("click", openDropDownMenu)
+buttonToNewsHeader.addEventListener("click", () => openDropDownMenu(".navigation__dropdown-menu_hover", "#headerArrow"));
+buttonToNewsMenu.addEventListener("click", () => openDropDownMenu(".navigation__dropdown-menu_click", "#menuArrow"));
 
 const getMarginRightOfElement = (element) => {
   const slideMargin = window.getComputedStyle(slide).marginRight;

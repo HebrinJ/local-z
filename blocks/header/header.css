@@ -1,0 +1,15 @@
+.header {
+    padding-top: 0;
+    padding-bottom: 158px;
+    position: relative;
+    background: url("../../images/header-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    .header {
+      padding-bottom: 90px;
+    }
+  }

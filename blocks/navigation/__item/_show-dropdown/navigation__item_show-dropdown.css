@@ -1,0 +1,8 @@
+.navigation__item_show-dropdown {
+    margin-right: 92px;
+    position: relative;
+  }
+
+.navigation__item_show-dropdown .navigation__button:hover .navigation__dropdown-menu_hover {
+    display: block;
+  }

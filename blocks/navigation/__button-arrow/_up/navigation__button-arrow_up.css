@@ -1,0 +1,3 @@
+.navigation__button-arrow_up::after {
+    transform: rotate(180deg);
+  }
